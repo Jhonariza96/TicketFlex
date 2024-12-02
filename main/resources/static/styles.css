@@ -1,0 +1,398 @@
+/* -----------------------------------------------
+   Estilos Generales
+----------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#7597de, #2b1055);
+}
+
+/* -----------------------------------------------
+   Header
+----------------------------------------------- */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* -----------------------------------------------
+   Navegación
+----------------------------------------------- */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+    align-items: center;
+    margin: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #d9534f;
+    border: 1px solid #d9534f;
+}
+
+nav button:active {
+    background-color: #c9302c;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #d9534f;
+    color: white;
+    border-radius: 5px;
+}
+
+/* -----------------------------------------------
+   Banner
+----------------------------------------------- */
+.banner {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* -----------------------------------------------
+   Eventos
+----------------------------------------------- */
+.eventos {
+    padding: 20px;
+}
+
+.event img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+/* -----------------------------------------------
+   Filtros (Formulario de búsqueda o filtros)
+----------------------------------------------- */
+.filtros {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filtros label {
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8080ff;
+}
+
+/* -----------------------------------------------
+   Footer
+----------------------------------------------- */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* -----------------------------------------------
+   Bienvenida (Texto de bienvenida)
+----------------------------------------------- */
+.bienvenido-container {
+    font-size: 1.5rem;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* -----------------------------------------------
+   Modal (Ventana emergente)
+----------------------------------------------- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* -----------------------------------------------
+   Entrada de numeros y selectores
+----------------------------------------------- */
+input[type="number"] {
+    width: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+select {
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#purchaseTitle, #modalTitle {
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* -----------------------------------------------
+   Estilos para los eventos
+----------------------------------------------- */
+.event {
+    width: 300px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.event img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* -----------------------------------------------
+   Redes Sociales
+----------------------------------------------- */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 15px;
+    color: #007BFF;
+    font-size: 26px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #0056b3;
+}
+
+/* -----------------------------------------------
+   Menu de usuario (Logout)
+----------------------------------------------- */
+#userSection {
+    position: relative;
+    cursor: pointer;
+}
+
+#logoutMenu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+#userSection:hover #logoutMenu {
+    display: block;
+}
+
+/* -----------------------------------------------
+   Enlaces en el footer
+----------------------------------------------- */
+#footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: #f7c600;
+    text-decoration: none;
+}
+
+/* -----------------------------------------------
+   Imagen del monstruo (animación de hover)
+----------------------------------------------- */
+#monster {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* -----------------------------------------------
+   Lista de eventos
+----------------------------------------------- */
+#eventosList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* -----------------------------------------------
+   Boton de desplazamiento hacia arriba (scroll-to-top)
+----------------------------------------------- */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    display: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background-color: #d9534f;
+    transform: scale(1.1);
+}
+
+.scroll-to-top i {
+    font-size: 20px;
+}
+
+/* ------------------------
+   Formulario de pago
+--------------------------- */
+#buyTicketModal .modal-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 400px;
+    margin: auto;
+}
+
+#buyTicketModal input, #buyTicketModal select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#buyTicketModal button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#buyTicketModal button:hover {
+    background-color: #45a049;
+}
+
+#buyTicketModal .modal-content label {
+    font-weight: bold;
+}
+
+
+
