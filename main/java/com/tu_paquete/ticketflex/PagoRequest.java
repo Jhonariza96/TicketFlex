@@ -1,7 +1,7 @@
 package com.tu_paquete.ticketflex;
 
 public class PagoRequest {
-    private Integer idUsuario;
+    private Integer idUsuario; //comentario añadido
     private Integer idEvento;
     private Integer cantidad;
     private String banco;
